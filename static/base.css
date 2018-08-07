@@ -1,0 +1,16 @@
+/* 全局CSS */
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  margin-top: 70px!important;
+}
+ul{
+  /* 去掉列表前面的点 */
+  list-style-type: none;
+}
+ul.navbar-right{
+  /* 导航栏用户名向左移动 */
+  margin-right: 0;
+}
