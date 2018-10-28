@@ -104,7 +104,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
 STATIC_URL = '/static/'
-#STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_ROOT = os.path.join(BASE_DIR, 'static_collected')
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
 ]
@@ -140,7 +140,7 @@ EACH_PAGE_BLOGS_NUMBER = 6
 
 # 缓存设置
 CACHES = {
-	'default': {
+    'default': {
 		'BACKEND': 'django.core.cache.backends.db.DatabaseCache',
 		'LOCATION': 'my_cache_table',
 	}
