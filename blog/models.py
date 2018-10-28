@@ -6,7 +6,6 @@ from django.contrib.contenttypes.models import ContentType # 导入 ContentType
 from ckeditor_uploader.fields import RichTextUploadingField
 from read_statistics.models import ReadNumExpandMethod,ReadDetail
 
-
 class BlogType(models.Model):
     '''博文类型模型'''
     # 类型名称
