@@ -1,0 +1,10 @@
+<!--同类型博文列表页-->
+{% extends 'blog/blog_list.html' %}
+
+{% block title %}
+    {{ blog_type.type_name }}
+{% endblock %}
+
+{% block blog_list_title %}
+    分类：{{ blog_type.type_name }}
+{% endblock %}

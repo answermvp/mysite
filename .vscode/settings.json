@@ -1,0 +1,9 @@
+{
+    "python.pythonPath": "/Users/answer/workspace/py3.6.4_project/mysite_env/bin/python",
+    "code-runner.executorMap": {
+        "python": "/Users/answer/workspace/py3.6.4_project/mysite_env/bin/python",
+    },
+    "python.linting.pylintArgs": [
+        "--load-plugins=pylint_django"
+    ]
+}
