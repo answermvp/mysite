@@ -25,7 +25,8 @@ class Blog(models.Model, ReadNumExpandMethod):
     # 博文类型，外键，关联到 BlogType 模型，删除博文的时候，不关联删除博文类型
     blog_type = models.ForeignKey(BlogType, on_delete=models.CASCADE)
     # 博客内容，长文本格式
-    content = RichTextUploadingField()
+    # content = RichTextUploadingField()
+    content = models.TextField()
     # 博文作者，外键，关联到 User 模型，在做删除博文操作的时候，不关联删除博文的作者
     author = models.ForeignKey(User, on_delete=models.CASCADE)
     # 通过contenttype的GenericRelation反向关联对应的模型

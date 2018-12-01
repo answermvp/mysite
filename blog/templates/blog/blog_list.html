@@ -34,7 +34,7 @@
                                         评论（{% get_comment_count blog %}）&nbsp;&nbsp;
                                         点赞（{% get_like_count blog %}）
                                     </p>
-                                    <p>{{ blog.content|striptags|truncatechars:120 }}</p> <!--模板过滤器：超长文本只显示前30个字符-->
+                                    <p>{{ blog.content|striptags|truncatewords:2 }}</p> <!--模板过滤器：截取两个空格-->
                                 </div>
                             {% empty %} <!--如果为空-->
                                 <div class="blog">
